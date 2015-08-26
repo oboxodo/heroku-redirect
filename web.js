@@ -1,7 +1,9 @@
 require('newrelic');
 var express = require('express');
+var morgan = require('morgan');
 
-var app = express.createServer(express.logger());
+var app = express();
+app.use(morgan('combined'));
 
 app.get('*', function(request, response) {
   response.redirect(process.env.NEW_BASE_URL + request.url)

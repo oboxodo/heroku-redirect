@@ -1,12 +1,13 @@
 {
   "name": "node-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "express": "2.5.x",
+    "express": "4.13.x",
+    "morgan": "^1.6.1",
     "newrelic": "~1.14.5"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.12.x",
+    "npm": "2.14.x"
   }
 }
